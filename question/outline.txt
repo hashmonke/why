@@ -1,3 +1,0 @@
-Question is a personal platform to easily pratice the five(+) whys technique, and to identify key, repitious words and patterns in the process.
-
-Maybe an open source project? Otherwise, a pure learning opportunity to build something helpful, and cool.
