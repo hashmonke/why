@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="Question" content="5(+) whys index">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+<div id="popup">
+<button id="close">&times;</button>
+
+ <h1 id="titles" style="margin-left: 10px;">Hey! Welcome &#128075;</h1>
+ <p id="para">The volume of people living, or making decisions with no meaning and direction today is staggaring. So we've built a tool to identify root causes, to serve exactly that.</p>
+ <p id="note"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="info2" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+</svg>  If a feature's availible for you, there's a chance it wasn't for others. So please let us know what works well, and what doesn't.</p>
+
+  <h2 id="featureupdate">Feature & Update Log</h2>
+ <ul class="features">
+  <li>Custom & suggested main statements <span id="beta">Beta</span></li>
+  <li>Root-cause therapy (why?) <span id="beta">Beta</span></li>
+  <li>Attributes: Automatic idication of 250+ emotion based keywords <span id="beta">Beta</span></li>
+  <li>Dark mode</li>
+ </ul>
+
+<script>
+
+  document.querySelector('#close', '.questionme').addEventListener
+  ("click", function() {
+    document.querySelector("#popup").style.display= "none";
+  })
+
+  window.addEventListener("load", function(){
+    setTimeout (
+      function open(event) {
+        document.querySelector("#popup").style.display="block";
+      },
+      500
+    )
+  })
+</script>
+
+</div>
+</div>
+
+<div class="box">
+<div id="titles">
+<h1>Question <span id="beta">Beta</span></h1>
+</div>
+<div id="titles">
+<p class="lets">Let's get to the bottom of this..</p>
+<input type="submit" class="btn-1" value="Question Me" onclick="showDiv('questionme'), showDiv('select'), closepopup()"></input>
+</div>
+
+<script>function showDiv(questionme){
+    document.getElementById(questionme).style.display = 'block';
+    }
+    </script>
+
+<div id="questionme" style="display:none">
+    <h3>At last! My problem solving friend in a box.</h3>
+    <input type="text" id="fill-me" placeholder="State a desire or problem in your life">
+    <button id="btn-2" onclick="fun1(), showDiv('inputrow')">Okay</br></button> </div>
+
+<div id="select" style="display:none">
+  <input type="submit" id="select1" onClick="fun2(), showDiv('inputrow')" value="I want to get rich &#128176;"></input>
+  <input type="submit" id="select2" onClick="fun3(), showDiv('inputrow')" value="I'm unhappy &#128528;"></input>
+  <input type="submit" id="select3" onClick="fun4(), showDiv('inputrow')" value="I got fired from work today &#128188;"></input>
+</div>
+
+<script>
+  const select = document.getElementById('select');
+    const select1 = document.getElementById('select1');
+    const output = document.getElementById('output1');
+
+function fun2() {
+    output1.innerHTML = "<h5>I want to get rich &#128176;</h5>"
+
+}
+
+const selec = document.getElementById('select');
+    const select2 = document.getElementById('select2');
+    const output2 = document.getElementById('output1');
+
+function fun3() {
+    output1.innerHTML = "<h5>I'm unhappy &#128528;</h5>"
+
+}
+
+const sele = document.getElementById('select');
+    const select3 = document.getElementById('select3');
+    const output3 = document.getElementById('output1');
+
+function fun4() {
+    output1.innerHTML = "<h5>I got fired from work today &#128188;</h5>"
+
+}
+
+function showDiv(select){
+    document.getElementById(select).style.display = 'block';
+    }
+
+</script>
+
+<h2 id="output1"></h2>
+
+<script>function showDiv(inputrow){
+    document.getElementById(inputrow).style.display = 'block';
+    }
+    </script>
+
+
+<form>
+  <div id="inputrow" style="display:none">
+    <div class="honest">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="info" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+          </svg> 
+        <p>Accept the weaknesses and flaws that may become apparent. With honesty comes reflection, and reflection earns growth.</p>
+    </div>
+    <table class="display">
+        <tbody></tbody>
+      </table>
+    <label for="text">Why?</label>
+    <input type="text" name="text" id="text" onforminput='useEffect()'/>
+    <button class="nextbtn" onClick="showDiv('complete'), showDiv('container')">+</button>
+  </div>
+
+</form>
+<div id="main-point">
+<script>
+  const formEl = document.querySelector("form");
+  const tbodyEl = document.querySelector("tbody");
+  const tableEl = document.querySelector("table");
+  function add(t) {
+    t.preventDefault();
+    const text = document.getElementById("text").value;
+    tbodyEl.innerHTML += `
+        <tr>
+            <td><h2>${text}</h2></td>
+            <td><input type="button" class="deleteBtn" value="-"></input></td>
+        </tr>
+    `;
+  }
+
+  
+
+  function onDeleteRow(t) {
+    if (!t.target.classList.contains("deleteBtn")) {
+      return;
+    }
+
+    const btn = t.target;
+    btn.closest("tr").remove();
+  }
+
+  formEl.addEventListener("submit", add);
+  tableEl.addEventListener("click", onDeleteRow);
+
+  const txt1 = document.getElementById('fill-me', 'select');
+    const btn2 = document.getElementById('btn2', 'select1');
+    const out1 = document.getElementById('output1');
+
+function fun1() {
+    output1.innerHTML = "<h5>"+txt1.value+"</h5>"
+
+}
+
+
+</script>
+
+</div>
+</div>
+
+<div id="container" style="display:none">
+
+  <script>function showDiv(container){
+    document.getElementById(container).style.display = 'block';
+    }
+    </script>
+
+  <script>
+  
+    const inp = document.getElementById( "text" )
+    const container = document.getElementById( "container" )
+    
+    inp.addEventListener( "input", adjec )
+
+    function adjec( ev ) {
+	  container.innerHTML = "<h3>Attributes:</h3>";
+    const words = ["adorable","adventurous","aggressive","agreeable","alert","alive","amused","angry","annoyed","annoying","anxious","arrogant","ashamed","attractive","average","awful","bad","beautiful","better","bewildered","black","bloody","blue","blue-eyed","blushing","bored","brainy","brave","breakable","bright","busy","calm","careful","cautious","charming","cheerful","clean","clear","clever","cloudy","clumsy","colorful","combative","comfortable","conscious","concerned","condemned","confused", "cool", "cooperative","courageous","crazy","creepy","crowded","cruel","curious","cute","dangerous","dark","dead","defeated","defiant","delightful","depressed","determined","different","difficult","disgusted","distinct","disturbed","dizzy","doubtful","drab","dull","eager","easy","elated","elegant","embarrassed","enchanting","encouraging","energetic","enthusiastic","envious","evil","excited","expensive","exuberant","fair","faithful","famous","fancy","fantastic","fierce","filthy","fine","foolish","fragile","frail","frantic","friendly","frightened","funny","gentle","gifted","glamorous","gleaming","glorious","good", "great", "gorgeous","graceful","grieving","grotesque","grumpy","handsome", "unhappy", "happy","healthy","helpful","helpless","hilarious","homeless","homely","horrible","hungry","hurt","important","impossible","inexpensive","innocent","inquisitive","itchy","jealous","jittery","jolly","joyous","kind","lazy","light","lively","lonely","long","lovely","lucky","magnificent","misty","modern","motionless","muddy","mushy","mysterious","nasty","naughty","nervous","nice","nutty","obedient","obnoxious","odd","old-fashioned","open","outrageous","outstanding","panicky","perfect","plain","pleasant","poised","poor","powerful","precious","prickly","proud","putrid","puzzled","quaint","real","relieved","repulsive","rich","scary","selfish","shiny","shy","silly","sleepy","smiling","smoggy","sore","sparkling","splendid","spotless","stormy","strange","stupid","successful","super","talented","tame","tasty","tender","tense","terrible","thankful","thoughtful","thoughtless","tired","tough","troubled","ugliest","ugly","uninterested","unsightly","unusual","upset","uptight","vast","victorious","vivacious","wandering","weary","wicked","wide-eyed","wild","witty","worried","worrisome","wrong","zany","zealous"]
+    words.some( checkForBottomText )
+    }
+
+    function checkForBottomText( val )
+{
+	if ( inp.value.includes( val ) )
+  	createBottomText( val ) 
+}
+
+function createBottomText( word )
+{
+	let p = document.createElement( "p" )
+  p.innerText = word
+	container.appendChild( p )
+}
+
+  </script>
+
+</div>
+
+<div id="complete" style="display:none" onClick="showDiv('root')">
+    <h3>Complete</h3>
+
+    <script>function showDiv(complete){
+      document.getElementById(complete).style.display = 'block';
+      }
+      </script>
+</div>
+
+<div id="root" style="display:none">
+  <label for="text">So what was your root cause?</label>
+  <input type="text" id="roottype">
+  
+  <script>function showDiv(root){
+    document.getElementById(root).style.display = 'block';
+    }
+    </script>
+</div>
+
+<p id="hash">Built with &#128151 by <a href="https://twitter.com/hashmonke" target="_blank" id="href">Hash</a></p>
+
+</body>
+
+</html>
