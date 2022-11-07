@@ -2,6 +2,7 @@
 A tool to identify root causes.
 
 Often times people make decisions, solve problems, reflect on trauma, and everything in between with no true identification of belief & reasoning.
+
 The mental model of asking "why" is something I've taken into account as I've matured, specifically more so in solitude.
 So I wanted to make something to reflect that..
 
