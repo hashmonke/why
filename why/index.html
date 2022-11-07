@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
+
+    <link rel="stylesheet" href="style.css">
     <meta name="Question" content="5(+) whys index">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
+	
 </head>
 
 <body>
@@ -24,7 +24,7 @@
   <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
 </svg>  If a feature's availible for you, there's a chance it wasn't for others. So please let us know what works well, and what doesn't.</p>
 
-  <h2 id="featureupdate">Feature & Update Log</h2>
+<h2 id="featureupdate">Feature & Update Log</h2>
  <ul class="features">
   <li>Custom & suggested main statements <span id="beta">Beta</span></li>
   <li>Root-cause therapy (why?) <span id="beta">Beta</span></li>
@@ -33,7 +33,6 @@
  </ul>
 
 <script>
-
   document.querySelector('#close', '.questionme').addEventListener
   ("click", function() {
     document.querySelector("#popup").style.display= "none";
@@ -61,10 +60,11 @@
 <input type="submit" class="btn-1" value="Question Me" onclick="showDiv('questionme'), showDiv('select'), closepopup()"></input>
 </div>
 
-<script>function showDiv(questionme){
+<script>
+function showDiv(questionme){
     document.getElementById(questionme).style.display = 'block';
     }
-    </script>
+</script>
 
 <div id="questionme" style="display:none">
     <h3>At last! My problem solving friend in a box.</h3>
@@ -78,7 +78,7 @@
 </div>
 
 <script>
-  const select = document.getElementById('select');
+const select = document.getElementById('select');
     const select1 = document.getElementById('select1');
     const output = document.getElementById('output1');
 
@@ -116,7 +116,7 @@ function showDiv(select){
 <script>function showDiv(inputrow){
     document.getElementById(inputrow).style.display = 'block';
     }
-    </script>
+</script>
 
 
 <form>
@@ -153,8 +153,6 @@ function showDiv(select){
     `;
   }
 
-  
-
   function onDeleteRow(t) {
     if (!t.target.classList.contains("deleteBtn")) {
       return;
@@ -175,8 +173,6 @@ function fun1() {
     output1.innerHTML = "<h5>"+txt1.value+"</h5>"
 
 }
-
-
 </script>
 
 </div>
@@ -184,13 +180,12 @@ function fun1() {
 
 <div id="container" style="display:none">
 
-  <script>function showDiv(container){
+<script>function showDiv(container){
     document.getElementById(container).style.display = 'block';
     }
-    </script>
+</script>
 
-  <script>
-  
+<script>
     const inp = document.getElementById( "text" )
     const container = document.getElementById( "container" )
     
@@ -214,32 +209,30 @@ function createBottomText( word )
   p.innerText = word
 	container.appendChild( p )
 }
-
-  </script>
+</script>
 
 </div>
 
 <div id="complete" style="display:none" onClick="showDiv('root')">
     <h3>Complete</h3>
 
-    <script>function showDiv(complete){
+<script>function showDiv(complete){
       document.getElementById(complete).style.display = 'block';
       }
-      </script>
+</script>
 </div>
 
 <div id="root" style="display:none">
   <label for="text">So what was your root cause?</label>
   <input type="text" id="roottype">
   
-  <script>function showDiv(root){
+<script>function showDiv(root){
     document.getElementById(root).style.display = 'block';
     }
-    </script>
+</script>
 </div>
 
 <p id="hash">Built with &#128151 by <a href="https://twitter.com/hashmonke" target="_blank" id="href">Hash</a></p>
 
 </body>
-
 </html>
