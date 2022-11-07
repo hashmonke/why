@@ -1,5 +1,5 @@
 # Why
-A tool to identify root causes.
+*A tool to identify root causes.*
 
 Often times people make decisions, solve problems, reflect on trauma, and everything in between with no true identification of belief & reasoning.
 
